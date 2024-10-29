@@ -23,4 +23,16 @@ public class MatrixChecker {
     return true;
 
     }
+
+    boolean isTriangular(int[][] myArray){
+        for(int i = 0; i < myArray.length; i++){
+            for(int j = 0; j < i; j++){
+                if (myArray[i][j] != 0){
+                    return false;
+                }
+            }
+        }
+        return true;
+
+    }
 }
